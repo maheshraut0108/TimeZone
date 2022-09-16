@@ -1,0 +1,599 @@
+#!/bin/bash
+# Author: Mahesh Raut : 15th September 2022
+
+	function menu {
+					clear
+					echo
+					echo -e "\t\t\tSelect Continent\n"
+					echo -e "\t1. Asia"
+					echo -e "\t2. Europe"
+					echo -e "\t3. Africa"
+					echo -e "\t4. North America"
+					echo -e "\t5. South America"
+					echo -e "\t6. Antarctica"
+					echo -e "\t7. Ocesnia"
+					echo -e "\t0. Exit Menu\n\n"
+					echo -en "\t\tEnter an Option:"
+					read -n 1 option
+	case $option in
+        0) exit ;;
+		1) Asia ;;												   
+		2) Europe ;;
+		3) Africa ;;
+		4) North_America ;;
+		5) South_America ;;
+		6) Antarctica ;;
+		7) Ocesnia ;;
+		*) clear
+			echo -e "Sorry, wrong selection";;
+	esac
+	echo -en "\n\n\t\t\tHit any key to continue"
+	read -n 1 line
+	}	
+
+function Asia {
+	while [ 1 ]
+	do
+			clear
+			echo
+			echo -e "\t\t\tSelect Country \n"
+			echo -e "\ta. India"
+			echo -e "\tb. China"
+			echo -e "\tc. Japan"
+			echo -e "\td. South Korea"
+			echo -e "\te. Iran"
+			echo -e "\tf. Saudi Arabia"
+			echo -e "\tg. Taiwan"
+			echo -e "\th. Sri Lanka"
+			echo -e "\ti. Indonesia"
+			echo -e "\tj. Singapore"
+			echo -e "\tk. Pakistan"
+			echo -e "\tl. Isrial"	
+			echo -e "\tm. Iraq"
+			echo -e "\tn. Syria"
+			echo -e "\to. Kuwait"
+			echo -e "\tp. Nepal"
+			echo -e "\tq. Balngladesh"
+			echo -e "\tr. Philippines"
+			echo -e "\ts. Turkey"
+			echo -e "\tt. Change Continent"
+			echo -e "\t0. Exit Menu\n\n"
+			echo -en "\t\tEnter an Option: "
+			read -n 1 option2
+			echo
+					
+			case $option2 in
+			  a)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST";;
+			  b)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in China is - " `date -d "UTC+8 hours" "+%Y-%m-%d %H:%M:%S"` "CST";;
+			  c)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			    echo "Current time in Japan is - " `date -d "UTC+9 hours" "+%Y-%m-%d %H:%M:%S"` "JST";;
+			  d)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in South Korea is - " `date -d "UTC+9 hours" "+%Y-%m-%d %H:%M:%S"` "KST";;
+			  e)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Iran is - " `date -d "UTC+4 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IDT";;
+			  f)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Saudi Arabia is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "AST";;
+			  g)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Taiwan is - " `date -d "UTC+8 hours" "+%Y-%m-%d %H:%M:%S"` "CST";;
+			  h)clear
+ 			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Sri Lanka is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST";;
+			  i)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Indonesia is - " `date -d "UTC+7 hours" "+%Y-%m-%d %H:%M:%S"` "IST";;
+			  j)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Singapore is - " `date -d "UTC+8 hours" "+%Y-%m-%d %H:%M:%S"` "SST";;
+			  k)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Pakistan is - " `date -d "UTC+5 hours" "+%Y-%m-%d %H:%M:%S"` "PKT";;
+			  l)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Israel is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "IDT";;
+			  m)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Iraq is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "AST";;
+			  n)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Syria is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "EEST";;
+			  o)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Kuwait is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "AST";;
+			  p)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Nepal is - " `date -d "UTC+5 hours 45 mins" "+%Y-%m-%d %H:%M:%S"` "NPT";;
+			  q)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Bangladesh is - " `date -d "UTC+6 hours" "+%Y-%m-%d %H:%M:%S"` "BST";;
+			  r)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Philipines is - " `date -d "UTC+8 hours" "+%Y-%m-%d %H:%M:%S"` "PST";;
+			  s)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Turkey is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "TRT";;
+			  t)clear
+			   menu;;
+			  0) exit ;;
+			  *) clear
+			  echo "Sorry, wrong selection";;
+			esac
+			echo -en "\n\n\t\t\tHit any key to continue"
+		read -n 1 line
+		done
+	}									
+
+function Europe {
+		while [ 1 ]
+		do
+			clear
+			echo
+			echo -e "\t\t\tSelect Country \n"
+			echo -e "\ta. Germany"
+			echo -e "\tb. Italy"
+			echo -e "\tc. France"
+			echo -e "\td. United Kingdom"
+			echo -e "\te. Ukraine"
+			echo -e "\tf. Netherlands"
+			echo -e "\tg. Swden"
+			echo -e "\th. Denmark"
+			echo -e "\ti. Albania"
+			echo -e "\tj. Romania"
+			echo -e "\tk. Finland"
+			echo -e "\tl. Ireland"	
+			echo -e "\tm. Serbia"
+			echo -e "\tn. Bulgaria"
+			echo -e "\to. Monaco"
+			echo -e "\tp. Slovenia"
+			echo -e "\tq. Andorra"
+			echo -e "\tr. Belgium"
+			echo -e "\ts. Norway"
+			echo -e "\tt. Change Continent"
+			echo -e "\t0. Exit Menu\n\n"
+			echo -en "\t\tEnter an Option: "
+			read -n 1 option2
+			echo
+					
+			case $option2 in
+			  a)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Germany is - "`date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "MEZ";;
+			  b)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Italy is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "CET";;
+			  c)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			    echo "Current time in France is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "FRA";;
+			  d)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in United Kingdom is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "UK";;
+			  e)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Ukraine is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "UKR";;
+			  f)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Netherlands is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "CET";;
+			  g)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Swden is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "CET";;
+			  h)clear
+ 			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Denmark is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "DNK";;
+			  i)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Albania is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "CET";;
+			  j)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Romania is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "ROU";;
+			  k)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Finland is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "EET";;
+			  l)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Ireland is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "IRL";;
+			  m)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Serbia is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "SRB";;
+			  n)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Bulgaria is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "BGR";;
+			  o)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Monaco is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "CET";;
+			  p)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Slovenia is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "CET";;
+			  q)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Andorra is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "CET";;
+			  r)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Belgium is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "BEL";;
+			  s)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Norway is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "NOR";;
+			  t)clear
+			   menu;;
+			  0) exit ;;
+			  *) clear
+			  echo "Sorry, wrong selection";;
+			esac
+			echo -en "\n\n\t\t\tHit any key to continue"
+		read -n 1 line
+		done
+	}									
+
+function Africa {
+		while [ 1 ]
+		do
+			clear
+			echo
+			echo -e "\t\t\tSelect Country \n"
+			echo -e "\ta. Nigeria"
+			echo -e "\tb. Ethiopia"
+			echo -e "\tc. Egypt"
+			echo -e "\td. South Africa"
+			echo -e "\te. Kenya"
+			echo -e "\tf. Sudan"
+			echo -e "\tg. Algeria"
+			echo -e "\th. Somalia"
+			echo -e "\ti. Zimbabwe"
+			echo -e "\tj. Tunisia"
+			echo -e "\tk. Liberia"
+			echo -e "\tl. Seychelles"	
+			echo -e "\tm. Mayotte (France)"
+			echo -e "\tn. Réunion (France)"
+			echo -e "\to. Botswana"
+			echo -e "\tp. Namibia"
+			echo -e "\tq. Senegal"
+			echo -e "\tr. Uganda"
+			echo -e "\ts. Morocco"
+			echo -e "\tt. Change Continent"
+			echo -e "\t0. Exit Menu\n\n"
+			echo -en "\t\tEnter an Option: "
+			read -n 1 option2
+			echo
+					
+			case $option2 in
+			  a)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Nigeria is - "`date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "NG";;
+			  b)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Ethiopia is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "ET";;
+			  c)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			    echo "Current time in Egypt is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "EG";;
+			  d)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in South Africa is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "ZA";;
+			  e)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Kenya is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "KE";;
+			  f)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Sudan is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "SS";;
+			  g)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Algeria is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "DZ";;
+			  h)clear
+ 			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Somalia is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "SO";;
+			  i)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Zimbabwe is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "ZW";;
+			  j)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Tunisia is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "TN";;
+			  k)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Liberia is - " `date -d "UTC+0 hours" "+%Y-%m-%d %H:%M:%S"` "LR";;
+			  l)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Seychelles is - " `date -d "UTC+4 hours" "+%Y-%m-%d %H:%M:%S"` "SC";;
+			  m)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Mayotte (France) is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "YT";;
+			  n)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Réunion (France) is - " `date -d "UTC+4 hours" "+%Y-%m-%d %H:%M:%S"` "RE";;
+			  o)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Botswana is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "BW";;
+			  p)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Namibia is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "NA";;
+			  q)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Senegal is - " `date -d "UTC+0 hours" "+%Y-%m-%d %H:%M:%S"` "SN";;
+			  r)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Uganda is - " `date -d "UTC+3 hours" "+%Y-%m-%d %H:%M:%S"` "UG";;
+			  s)clear
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Morocco is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "MA";;
+			  t)clear
+			   menu;;
+			  0) exit ;;
+			  *) clear
+			  echo "Sorry, wrong selection";;
+			esac
+			echo -en "\n\n\t\t\tHit any key to continue"
+		read -n 1 line
+		done
+	}		
+
+function North_America {
+		while [ 1 ]
+		do
+			clear
+			echo
+			echo -e "\t\t\tSelect Country \n"
+			echo -e "\ta. United States"
+			echo -e "\tb. Canada"
+			echo -e "\tc. Mexico"
+			echo -e "\td. Grrenland"
+			echo -e "\te. Panama"
+			echo -e "\tf. Jamica"
+			echo -e "\tg. Cuba"
+			echo -e "\th. Guatemala"
+			echo -e "\ti. Puerto Rico"
+			echo -e "\tj. Haiti"
+			echo -e "\tt. Change Continent"
+			echo -e "\t0. Exit Menu\n\n"
+			echo -en "\t\tEnter an Option: "
+			read -n 1 option2
+			echo
+					
+			case $option2 in
+			  a)clear
+			   echo -e "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST \n"
+			   echo -e "United States Time with Timezones: \n\n"
+			   echo "Current time in Chicago is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "CDT"
+			   echo "Current time in Denver is - " `date -d "UTC-6 hours" "+%Y-%m-%d %H:%M:%S"` "MDT"
+			   echo "Current time in Los Angeles is - " `date -d "UTC-7 hours" "+%Y-%m-%d %H:%M:%S"` "PDT"
+			   echo "Current time in Anchorage is - " `date -d "UTC-8 hours" "+%Y-%m-%d %H:%M:%S"` "AKDT"
+			   echo "Current time in Honolulu is - "`date -d "UTC-10 hours" "+%Y-%m-%d %H:%M:%S"` "HST";;
+			  b)clear
+			   echo -e "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo -e "Canada Time with Timezones: \n\n"
+			   echo "Current time in Ottawa is - " `date -d "UTC-4 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "ON"
+			   echo "Current time in Newfoundland is - " `date -d "UTC-2 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "NT"
+			   echo "Current time in Halifax Regional Municipality is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "CA"
+			   echo "Current time in Winnipeg is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "CDT"
+			   echo "Current time in Regina is - " `date -d "UTC-6 hours" "+%Y-%m-%d %H:%M:%S"` "CST"
+			   echo "Current time in Edmonton is - " `date -d "UTC-6 hours" "+%Y-%m-%d %H:%M:%S"` "MDT"
+			   echo "Current time in Vancouver is - "`date -d "UTC-7 hours" "+%Y-%m-%d %H:%M:%S"` "PDT";;
+			  c)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			    echo "Current time in Mexico is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "CDT";;
+			  d)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Grrenland is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "ADT";;
+			  e)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Panama is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "PA";;
+			  f)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Jamica is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "JM";;
+			  g)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Cuba is - " `date -d "UTC-4 hours" "+%Y-%m-%d %H:%M:%S"` "CU";;
+			  h)clear
+ 			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Guatemala is - " `date -d "UTC-6 hours" "+%Y-%m-%d %H:%M:%S"` "GT";;
+			  i)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Puerto Rico is - " `date -d "UTC-4 hours" "+%Y-%m-%d %H:%M:%S"` "PR";;
+			  j)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Haiti is - " `date -d "UTC-4 hours" "+%Y-%m-%d %H:%M:%S"` "HT";;
+			  t)clear
+			   menu;;
+			  0) exit ;;
+			  *) clear
+			  echo "Sorry, wrong selection";;
+			esac
+			echo -en "\n\n\t\t\tHit any key to continue"
+		read -n 1 line
+		done
+	}		
+
+function South_America {
+		while [ 1 ]
+		do
+			clear
+			echo
+			echo -e "\t\t\tSelect Country \n"
+			echo -e "\ta. Brazil"
+			echo -e "\tb. Colombia"
+			echo -e "\tc. Argentina"
+			echo -e "\td. Peru"
+			echo -e "\te. Chile"
+			echo -e "\tf. Venezuela"
+			echo -e "\tg. Ecuador"
+			echo -e "\th. Bolivia"
+			echo -e "\ti. Guyana"
+			echo -e "\tj. Uruguay"
+			echo -e "\tt. Change Continent"
+			echo -e "\t0. Exit Menu\n\n"
+			echo -en "\t\tEnter an Option: "
+			read -n 1 option2
+			echo
+					
+			case $option2 in
+			  a)clear
+			   echo -e "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST \n"
+			   echo -e "Brazil Time with Timezones: \n\n"
+			   echo "Current time in Acre Time is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "ACT"
+			   echo "Current time in Amazon Time is - " `date -d "UTC-4 hours" "+%Y-%m-%d %H:%M:%S"` "AMT"
+			   echo "Current time in Brasília Time is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "BRT"
+			   echo "Current time in Fernando de Noronha Time is - " `date -d "UTC-2 hours" "+%Y-%m-%d %H:%M:%S"` "FNT";;
+			  b)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Colombia is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "CO";;
+			  c)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			    echo "Current time in Argentina is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "ART";;
+			  d)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Peru is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "PE";;
+			  e)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Chile is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "CLT";;
+			  f)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Venezuela is - " `date -d "UTC-4 hours" "+%Y-%m-%d %H:%M:%S"` "VE";;
+			  g)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Ecuador is - " `date -d "UTC-5 hours" "+%Y-%m-%d %H:%M:%S"` "EST";;
+			  h)clear
+ 			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Bolivia is - " `date -d "UTC-4 hours" "+%Y-%m-%d %H:%M:%S"` "BO";;
+			  i)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Guyana is - " `date -d "UTC-4 hours" "+%Y-%m-%d %H:%M:%S"` "GY";;
+			  j)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Uruguay is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "UY";;
+			  t)clear
+			   menu;;
+			  0) exit ;;
+			  *) clear
+			  echo "Sorry, wrong selection";;
+			esac
+			echo -en "\n\n\t\t\tHit any key to continue"
+		read -n 1 line
+		done
+	}		
+
+function Antarctica {
+		while [ 1 ]
+		do
+			clear
+			echo
+			echo $'\e[31;1m There are no countries in Antarctica, although seven nations claim different parts of it \e[0m'
+			echo $'\e[0m'
+			echo -e "\t\t\tSelect Country \n"
+			echo -e "\ta. New Zealand"
+			echo -e "\tb. Australia"
+			echo -e "\tc. France"
+			echo -e "\td. Norway"
+			echo -e "\te. United Kingdom"
+			echo -e "\tf. Chile"
+			echo -e "\tg. Argentina"
+			echo -e "\tt. Change Continent"
+			echo -e "\t0. Exit Menu\n\n"
+			echo -en "\t\tEnter an Option: "
+			read -n 1 option2
+			echo
+					
+			case $option2 in
+			  a)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in New Zealand is - "`date -d "UTC+12 hours" "+%Y-%m-%d %H:%M:%S"` "NZST";;
+			  b)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Australia is - " `date -d "UTC+10 hours" "+%Y-%m-%d %H:%M:%S"` "AEST";;
+			  c)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			    echo "Current time in France is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "FR";;
+			  d)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Norway is - " `date -d "UTC+2 hours" "+%Y-%m-%d %H:%M:%S"` "NO";;
+			  e)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in United Kingdom is - " `date -d "UTC+1 hours" "+%Y-%m-%d %H:%M:%S"` "BST";;
+			  f)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Chile is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "CLT";;
+			  g)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Argentina is - " `date -d "UTC-3 hours" "+%Y-%m-%d %H:%M:%S"` "ART";;
+			  t)clear
+			   menu;;
+			  0) exit ;;
+			  *) clear
+			  echo "Sorry, wrong selection";;
+			esac
+			echo -en "\n\n\t\t\tHit any key to continue"
+		read -n 1 line
+		done
+	}		
+
+function Ocesnia {
+		while [ 1 ]
+		do
+			clear
+			echo
+			echo -e "\t\t\tSelect Country \n"
+			echo -e "\ta. New Zealand"
+			echo -e "\tb. Australia"
+			echo -e "\tc. Tonga"
+			echo -e "\td. Samoa"
+			echo -e "\te. Solomon Islands"
+			echo -e "\tf. Palau"
+			echo -e "\tg. Tuvalu"
+			echo -e "\th. Vanuatu"
+			echo -e "\ti. Nauru"
+			echo -e "\tj. Marshall Island"
+			echo -e "\tt. Change Continent"
+			echo -e "\t0. Exit Menu\n\n"
+			echo -en "\t\tEnter an Option: "
+			read -n 1 option2
+			echo
+					
+			case $option2 in
+			  a)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in New Zealand is - "`date -d "UTC+12 hours" "+%Y-%m-%d %H:%M:%S"` "NZST";;
+			  b)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Australia is - " `date -d "UTC+10 hours" "+%Y-%m-%d %H:%M:%S"` "AEST";;
+			  c)clear 
+			    echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			    echo "Current time in Tonga is - " `date -d "UTC+13 hours" "+%Y-%m-%d %H:%M:%S"` "TOT";;
+			  d)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Samoa is - " `date -d "UTC+13 hours" "+%Y-%m-%d %H:%M:%S"` "SST";;
+			  e)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Solomon Islands is - " `date -d "UTC+11 hours" "+%Y-%m-%d %H:%M:%S"` "SBT";;
+			  f)clear
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Palau is - " `date -d "UTC+9 hours" "+%Y-%m-%d %H:%M:%S"` "PLW";;
+			  g)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Tuvalu is - " `date -d "UTC+12 hours" "+%Y-%m-%d %H:%M:%S"` "TVT";;
+			  h)clear
+ 			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Vanuatu is - " `date -d "UTC+11 hours" "+%Y-%m-%d %H:%M:%S"` "UVT";;
+			  i)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Nauru is - " `date -d "UTC+12 hours" "+%Y-%m-%d %H:%M:%S"` "NA";;
+			  j)clear 
+			   echo "Current time in India is - " `date -d "UTC+5 hours 30 mins" "+%Y-%m-%d %H:%M:%S"` "IST"
+			   echo "Current time in Marshall Island is - " `date -d "UTC+12 hours" "+%Y-%m-%d %H:%M:%S"` "MI";;
+			  t)clear
+			   menu;;
+			  0) exit ;;
+			  *) clear
+			  echo "Sorry, wrong selection";;
+			esac
+			echo -en "\n\n\t\t\tHit any key to continue"
+		read -n 1 line
+		done
+	}		
+
+while [ 1 ]
+do
+	menu
+done
+clear	
